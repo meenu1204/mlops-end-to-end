@@ -1,0 +1,12 @@
+# macOS system files
+.DS_Store
+
+# Virtual environment
+mlopsvenv/so
+venv/
+
+# Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+
