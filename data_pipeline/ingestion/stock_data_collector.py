@@ -59,4 +59,4 @@ def main():
         time.sleep(STREAMING_INTERVAL)
 
 if __name__ == "__main__":
-    main()
+    main()py
