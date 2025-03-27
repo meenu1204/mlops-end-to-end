@@ -2,6 +2,8 @@
 
 # Stock market data
 yfinance==0.2.37
+confluent-kafka==2.3.0
+
 
 # Config
 PyYAML==6.0.2
