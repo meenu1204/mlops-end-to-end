@@ -1,8 +1,0 @@
-# Stores static parameters for data pipeline
-
-symbol: AAPL # Stock ticker
-interval: 15m # Data frequency
-history_period: 60d # Fetch last 60 days of historical data
-recent_period: 1d # Fetch recent 1 day data
-streaming_interval: 900 # 15 minutes in seconds
-output_file: stock_market_data.csv
