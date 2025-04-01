@@ -1,4 +1,4 @@
-# Program name: logger_config.py
+# Name: logger_config.py
 # Description: Central logging utility used across all programs
 
 # Import libraries
