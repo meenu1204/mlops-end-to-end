@@ -1,0 +1,13 @@
+# Stores static parameters for data pipeline
+
+# stock_data_collector.py
+symbol: AAPL # Stock ticker
+interval: 15m # Data frequency
+history_period: 60d # Fetch last 60 days of historical data
+recent_period: 1d # Fetch recent 1 day data
+streaming_interval: 900 # 15 minutes in seconds
+output_file: stock_market_data.csv
+
+# real_time_data_streaming.py
+kafka_topic: AAPL_data_stream
+kafka_bootstrap_servers: localhost:9092
