@@ -6,7 +6,6 @@
 # Set Kafka installation directory
 KAFKA_DIR="/usr/local/opt/kafka/libexec" 
 
-PYTHON_PRODUCER_SCRIPT="data_pipeline/ingestion/real_time_kafka_producer.py"  
 TOPIC_NAME="AAPL_data_stream"
 
 # Start Zookeeper
@@ -27,7 +26,3 @@ $KAFKA_DIR/bin/kafka-topics.sh --create \
   --replication-factor 1 \
   --partitions 1 \
   --if-not-exists
-
-# Run kafka Producer
-echo "Running Python Kafka producer: $PYTHON_PRODUCER_SCRIPT"
-python3 $PYTHON_PRODUCER_SCRIPT
