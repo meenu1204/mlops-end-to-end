@@ -8,6 +8,7 @@ import threading
 import time
 
 from data_pipeline.ingestion import stock_data_collector
+from data_pipeline.ingestion import real_time_kafka_producer
 from main.logger_config import get_logger
 
 logger = get_logger('MLOps_main')
@@ -26,6 +27,9 @@ def run_ml_pipeline():
         ["bash", "data_pipeline/ingestion/kafka_producer.sh"], 
         check=True
     )
+    
+    logger.info('Step 2.2: Kafka producer sending data')
+    real_time_kafka_producer.stream_data_from_csv()
 
 if __name__ == "__main__":
     run_ml_pipeline()
